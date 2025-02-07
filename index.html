@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>全能AI绘画提示词工厂</title>
+    <title>全能AI绘画提示词</title>
     <!-- 基础样式 -->
     <style>
         body { font-family: "Microsoft YaHei", sans-serif; max-width: 1000px; margin: 20px auto; padding: 20px; }
@@ -24,7 +24,7 @@
     </style>
 </head>
 <body>
-    <h1>🎨 AI提示词超级工厂</h1>
+    <h1>🎨 AI绘画提示词超级工厂</h1>
 
     <!-- 主体描述 -->
     <div class="section">
@@ -37,333 +37,318 @@
         <h2>基础参数</h2>
         <div class="collapsible" onclick="toggleCollapse(this)">🔦 光影与照明（点击展开）</div>
         <div class="content multi-column">
-            <label><input type="checkbox" value="dramatic lighting"> 戏剧灯光</label>
-            <label><input type="checkbox" value="volumetric light"> 体积光</label>
-            <label><input type="checkbox" value="warm glow"> 温暖光辉</label>
-            <label><input type="checkbox" value="rays of shimmering light"> 微光</label>
-            <label><input type="checkbox" value="outer space view"> 外太空观</label>
-            <label><input type="checkbox" value="sun light"> 太阳光</label>
-            <label><input type="checkbox" value="torchlit"> 手电筒照明</label>
-            <label><input type="checkbox" value="twinkling stars"> 闪耀星空</label>
-            <label><input type="checkbox" value="color light"> 色光</label>
-            <label><input type="checkbox" value="cyberpunk light"> 赛博朋克光</label>
-            <label><input type="checkbox" value="soft light"> 柔软的光线</label>
-            <label><input type="checkbox" value="soft candlelight"> 柔和烛光</label>
-            <label><input type="checkbox" value="soft moonlight"> 柔和月光</label>
-            <label><input type="checkbox" value="soft illumination"> 柔和的照明/柔光</label>
-            <label><input type="checkbox" value="lava glow"> 熔岩光芒</label>
-            <label><input type="checkbox" value="global illuminations"> 全局照明</label>
-            <label><input type="checkbox" value="mood lighting"> 情绪照明</label>
-            <label><input type="checkbox" value="hard lighting"> 强光</label>
-            <label><input type="checkbox" value="front lighting"> 前灯</label>
-            <label><input type="checkbox" value="atmospheric lighting"> 氛围照明</label>
-            <label><input type="checkbox" value="sultry glow"> 暖昧光晕</label>
-            <label><input type="checkbox" value="warm light"> 暖光</label>
-            <label><input type="checkbox" value="back light"> 逆光</label>
-            <label><input type="checkbox" value="neon cold lighting"> 霓虹灯冷光</label>
-            <label><input type="checkbox" value="internal glow"> 内部发光</label>
-            <label><input type="checkbox" value="bright highlights"> 明亮高光</label>
-            <label><input type="checkbox" value="bright"> 明亮的光线</label>
-            <label><input type="checkbox" value="stark shadows"> 明暗分明</label>
-            <label><input type="checkbox" value="dreamy haze"> 梦幻雾气</label>
-            <label><input type="checkbox" value="dreamy glow"> 梦幻光芒</label>
-            <label><input type="checkbox" value="rim light"> 轮廓光</label>
-            <label><input type="checkbox" value="rembrandt lighting"> 伦勃朗照明</label>
-            <label><input type="checkbox" value="cold light"> 冷光</label>
-            <label><input type="checkbox" value="blue hour"> 蓝色时间</label>
-            <label><input type="checkbox" value="laser"> 激光</label>
-            <label><input type="checkbox" value="flame"> 火光</label>
-            <label><input type="checkbox" value="crepuscular ray"> 黄昏射线</label>
-            <label><input type="checkbox" value="chemiluminescence"> 化学发光</label>
-            <label><input type="checkbox" value="moody darkness"> 暗黑氛围</label>
-            <label><input type="checkbox" value="beautiful lighting"> 好看的灯光</label>
-            <label><input type="checkbox" value="ray tracing"> 光线追踪</label>
-            <label><input type="checkbox" value="glowing particle effects"> 光粒子效果</label>
-            <label><input type="checkbox" value="flare"> 光斑</label>
-            <label><input type="checkbox" value="harsh contrast"> 高对比度</label>
-            <label><input type="checkbox" value="clean background"> 干净的背景趋势</label>
-            <label><input type="checkbox" value="split lighting"> 分体照明</label>
-            <label><input type="checkbox" value="radioluminescence"> 放射发光</label>
-            <label><input type="checkbox" value="floodlight"> 泛光灯</label>
-            <label><input type="checkbox" value="reflection light"> 反光</label>
-            <label><input type="checkbox" value="top light"> 顶光</label>
-            <label><input type="checkbox" value="tyndall effect"> 丁达尔效应</label>
-            <label><input type="checkbox" value="electroluminescent wire"> 电致发光线</label>
-            <label><input type="checkbox" value="cinematic light"> 电影光</label>
-            <label><input type="checkbox" value="disco lighting"> 迪斯科灯光</label>
-            <label><input type="checkbox" value="morning light"> 晨光</label>
-            <label><input type="checkbox" value="raking light"> 侧光</label>
-            <label><input type="checkbox" value="rainbow sparks"> 彩虹火花</label>
-            <label><input type="checkbox" value="edge light"> 边缘光</label>
-            <label><input type="checkbox" value="back lighting"> 背光照明</label>
-            <label><input type="checkbox" value="dappled light"> 斑驳光线</label>
-            <label><input type="checkbox" value="moody"> 暗黑的</label>
-            <label><input type="checkbox" value="serene"> 安静恬淡</label>
-            <div>
-                <input type="text" id="customLighting" placeholder="添加自定义选项">
-                <button style="margin-left: 5px;" onclick="addCustomOption('customLighting', this)">添加</button>
-            </div>
+            <label><input type="checkbox" value="戏剧灯光"> 戏剧灯光</label>
+                <label><input type="checkbox" value="体积光"> 体积光</label>
+                <label><input type="checkbox" value="温暖光辉"> 温暖光辉</label>
+                <label><input type="checkbox" value="微光"> 微光</label>
+                <label><input type="checkbox" value="外太空观"> 外太空观</label>
+                <label><input type="checkbox" value="太阳光"> 太阳光</label>
+                <label><input type="checkbox" value="手电筒照明"> 手电筒照明</label>
+                <label><input type="checkbox" value="闪耀星空"> 闪耀星空</label>
+                <label><input type="checkbox" value="色光"> 色光</label>
+                <label><input type="checkbox" value="赛博朋克光"> 赛博朋克光</label>
+                <label><input type="checkbox" value="柔软的光线"> 柔软的光线</label>
+                <label><input type="checkbox" value="柔和烛光"> 柔和烛光</label>
+                <label><input type="checkbox" value="柔和月光"> 柔和月光</label>
+                <label><input type="checkbox" value="柔和的照明/柔光"> 柔和的照明/柔光</label>
+                <label><input type="checkbox" value="熔岩光芒"> 熔岩光芒</label>
+                <label><input type="checkbox" value="全局照明"> 全局照明</label>
+                <label><input type="checkbox" value="情绪照明"> 情绪照明</label>
+                <label><input type="checkbox" value="强光"> 强光</label>
+                <label><input type="checkbox" value="前灯"> 前灯</label>
+                <label><input type="checkbox" value="氛围照明"> 氛围照明</label>
+                <label><input type="checkbox" value="暖昧光晕"> 暖昧光晕</label>
+                <label><input type="checkbox" value="暖光"> 暖光</label>
+                <label><input type="checkbox" value="逆光"> 逆光</label>
+                <label><input type="checkbox" value="霓虹灯冷光"> 霓虹灯冷光</label>
+                <label><input type="checkbox" value="内部发光"> 内部发光</label>
+                <label><input type="checkbox" value="明亮高光"> 明亮高光</label>
+                <label><input type="checkbox" value="明亮的光线"> 明亮的光线</label>
+                <label><input type="checkbox" value="明暗分明"> 明暗分明</label>
+                <label><input type="checkbox" value="梦幻雾气"> 梦幻雾气</label>
+                <label><input type="checkbox" value="梦幻光芒"> 梦幻光芒</label>
+                <label><input type="checkbox" value="轮廓光"> 轮廓光</label>
+                <label><input type="checkbox" value="伦勃朗照明"> 伦勃朗照明</label>
+                <label><input type="checkbox" value="冷光"> 冷光</label>
+                <label><input type="checkbox" value="蓝色时间"> 蓝色时间</label>
+                <label><input type="checkbox" value="激光"> 激光</label>
+                <label><input type="checkbox" value="火光"> 火光</label>
+                <label><input type="checkbox" value="黄昏射线"> 黄昏射线</label>
+                <label><input type="checkbox" value="化学发光"> 化学发光</label>
+                <label><input type="checkbox" value="暗黑氛围"> 暗黑氛围</label>
+                <label><input type="checkbox" value="好看的灯光"> 好看的灯光</label>
+                <label><input type="checkbox" value="光线追踪"> 光线追踪</label>
+                <label><input type="checkbox" value="光粒子效果"> 光粒子效果</label>
+                <label><input type="checkbox" value="光斑"> 光斑</label>
+                <label><input type="checkbox" value="高对比度"> 高对比度</label>
+                <label><input type="checkbox" value="干净的背景趋势"> 干净的背景趋势</label>
+                <label><input type="checkbox" value="分体照明"> 分体照明</label>
+                <label><input type="checkbox" value="放射发光"> 放射发光</label>
+                <label><input type="checkbox" value="泛光灯"> 泛光灯</label>
+                <label><input type="checkbox" value="反光"> 反光</label>
+                <label><input type="checkbox" value="顶光"> 顶光</label>
+                <label><input type="checkbox" value="丁达尔效应"> 丁达尔效应</label>
+                <label><input type="checkbox" value="电致发光线"> 电致发光线</label>
+                <label><input type="checkbox" value="电影光"> 电影光</label>
+                <label><input type="checkbox" value="迪斯科灯光"> 迪斯科灯光</label>
+                <label><input type="checkbox" value="晨光"> 晨光</label>
+                <label><input type="checkbox" value="侧光"> 侧光</label>
+                <label><input type="checkbox" value="彩虹火花"> 彩虹火花</label>
+                <label><input type="checkbox" value="边缘光"> 边缘光</label>
+                <label><input type="checkbox" value="背光照明"> 背光照明</label>
+                <label><input type="checkbox" value="斑驳光线"> 斑驳光线</label>
+                <label><input type="checkbox" value="暗黑的"> 暗黑的</label>
+                <label><input type="checkbox" value="安静恬淡"> 安静恬淡</label>
+            
         </div>
     </div>
     <div class="category-group">
         <div class="collapsible" onclick="toggleCollapse(this)">🎬 镜头与构图（点击展开）</div>
         <div class="content multi-column">
-            <label><input type="checkbox" value="cinematic shot"> 电影镜头</label>
-            <label><input type="checkbox" value="dutch angle"> 荷兰角（倾斜构图）</label>
-            <label><input type="checkbox" value="wide-angle view"> 广角镜头</label>
-            <label><input type="checkbox" value="symmetrical composition"> 对称构图</label>
-            <label><input type="checkbox" value="rule of thirds"> 三分法构图</label>
-            <label><input type="checkbox" value="birdseye view"> 鸟瞰图（俯视图）</label>
-            <label><input type="checkbox" value="low angle shot"> 低角度镜头</label>
-            <label><input type="checkbox" value="macroshot"> 微距拍摄</label>
-            <label><input type="checkbox" value="telephoto lens"> 长焦镜头</label>
-            <label><input type="checkbox" value="long shot"> 远景镜头</label>
-            <label><input type="checkbox" value="medium shot"> 中景镜头</label>
-            <label><input type="checkbox" value="close-up"> 特写镜头</label>
-            <label><input type="checkbox" value="over-the-shoulder shot"> 过肩镜头</label>
-            <label><input type="checkbox" value="panoramic shot"> 环绕镜头</label>
-            <label><input type="checkbox" value="dolly shot"> 推轨镜头（Dolly Shot）</label>
-            <label><input type="checkbox" value="zoom out"> 拉镜头（Zoom Out）</label>
-            <label><input type="checkbox" value="zoom in"> 推镜头（Zoom In）</label>
-            <label><input type="checkbox" value="handheld shot"> 手持拍摄</label>
-            <label><input type="checkbox" value="stabilized shot"> 稳定器拍摄</label>
-            <label><input type="checkbox" value="fisheye lens"> 鱼眼镜头</label>
-            <label><input type="checkbox" value="high angle shot"> 高角度镜头</label>
-            <label><input type="checkbox" value="first-person perspective"> 第一人称视角</label>
-            <label><input type="checkbox" value="reflected shot"> 反射镜头（通过镜子或水面等反射物体拍摄）</label>
-            <label><input type="checkbox" value="lighting contrast composition"> 光影对比构图</label>
-            <label><input type="checkbox" value="leading lines composition"> 引导线构图</label>
-            <label><input type="checkbox" value="frame within a frame composition"> 框架构图（使用框架元素引导观众视线）</label>
-            <label><input type="checkbox" value="diagonal composition"> 对角线构图</label>
-            <label><input type="checkbox" value="golden ratio composition"> 黄金分割构图</label>
-            <label><input type="checkbox" value="scatter composition"> 散点构图</label>
-            <label><input type="checkbox" value="repetition composition"> 重复构图</label>
-            <div>
-                <input type="text" id="customCamera" placeholder="添加自定义选项">
-                <button style="margin-left: 5px;" onclick="addCustomOption('customCamera', this)">添加</button>
-            </div>
+            <label><input type="checkbox" value="电影镜头"> 电影镜头</label>
+                <label><input type="checkbox" value="荷兰角"> 荷兰角（倾斜构图）</label>
+                <label><input type="checkbox" value="广角镜头"> 广角镜头</label>
+                <label><input type="checkbox" value="对称构图"> 对称构图</label>
+                <label><input type="checkbox" value="三分法构图"> 三分法构图</label>
+                <label><input type="checkbox" value="鸟瞰图"> 鸟瞰图（俯视图）</label>
+                <label><input type="checkbox" value="低角度镜头"> 低角度镜头</label>
+                <label><input type="checkbox" value="微距拍摄"> 微距拍摄</label>
+                <label><input type="checkbox" value="长焦镜头"> 长焦镜头</label>
+                <label><input type="checkbox" value="远景镜头"> 远景镜头</label>
+                <label><input type="checkbox" value="中景镜头"> 中景镜头</label>
+                <label><input type="checkbox" value="特写镜头"> 特写镜头</label>
+                <label><input type="checkbox" value="过肩镜头"> 过肩镜头</label>
+                <label><input type="checkbox" value="环绕镜头"> 环绕镜头</label>
+                <label><input type="checkbox" value="推轨镜头"> 推轨镜头（Dolly Shot）</label>
+                <label><input type="checkbox" value="拉镜头"> 拉镜头（Zoom Out）</label>
+                <label><input type="checkbox" value="推镜头"> 推镜头（Zoom In）</label>
+                <label><input type="checkbox" value="手持拍摄"> 手持拍摄</label>
+                <label><input type="checkbox" value="稳定器拍摄"> 稳定器拍摄</label>
+                <label><input type="checkbox" value="鱼眼镜头"> 鱼眼镜头</label>
+                <label><input type="checkbox" value="高角度镜头"> 高角度镜头</label>
+                <label><input type="checkbox" value="第一人称视角"> 第一人称视角</label>
+                <label><input type="checkbox" value="反射镜头"> 反射镜头（通过镜子或水面等反射物体拍摄）</label>
+                <label><input type="checkbox" value="光影对比构图"> 光影对比构图</label>
+                <label><input type="checkbox" value="引导线构图"> 引导线构图</label>
+                <label><input type="checkbox" value="框架构图"> 框架构图（使用框架元素引导观众视线）</label>
+                <label><input type="checkbox" value="对角线构图"> 对角线构图</label>
+                <label><input type="checkbox" value="黄金分割构图"> 黄金分割构图</label>
+                <label><input type="checkbox" value="散点构图"> 散点构图</label>
+                <label><input type="checkbox" value="重复构图"> 重复构图</label>
+            
         </div>
     </div>
     <div class="collapsible" onclick="toggleCollapse(this)">🌍 环境场景（点击展开）</div>
     <div class="content multi-column">
-    <label><input type="checkbox" value="gothic architecture"> 哥特式建筑</label>
-    <label><input type="checkbox" value="cyberpunk city"> 赛博朋克城市</label>
-    <label><input type="checkbox" value="magical forest"> 魔法森林</label>
-    <label><input type="checkbox" value="futuristic metropolis"> 未来都市</label>
-    <label><input type="checkbox" value="crystal cave"> 水晶洞穴</label>
-    <label><input type="checkbox" value="underwater world"> 水下世界</label>
-    <label><input type="checkbox" value="apocalyptic city"> 末日城市</label>
-    <label><input type="checkbox" value="enchanted garden"> 魔法花园</label>
-    <label><input type="checkbox" value="classical estate"> 古典庄园</label>
-    <label><input type="checkbox" value="wild desert"> 荒野沙漠</label>
-    <label><input type="checkbox" value="busy market"> 繁华市集</label>
-    <label><input type="checkbox" value="ice kingdom"> 冰雪王国</label>
-    <label><input type="checkbox" value="lava zone"> 熔岩地带</label>
-    <label><input type="checkbox" value="windmill prairie"> 风车草原</label>
-    <label><input type="checkbox" value="pirate harbor"> 海盗港湾</label>
-    <label><input type="checkbox" value="floating island"> 空中浮岛</label>
-    <label><input type="checkbox" value="abandoned factory"> 废弃工厂</label>
-    <label><input type="checkbox" value="fantasy castle"> 幻想城堡</label>
-    <label><input type="checkbox" value="mysterious ruins"> 神秘遗迹</label>
-    <label><input type="checkbox" value="space station"> 星际空间站</label>
-    <label><input type="checkbox" value="tropical rainforest"> 热带雨林</label>
-    <label><input type="checkbox" value="mountain village"> 高山村落</label>
-    <label><input type="checkbox" value="tech laboratory"> 科技实验室</label>
-    <label><input type="checkbox" value="ancient temple"> 古老神庙</label>
-    <label><input type="checkbox" value="ghost ship"> 幽灵船</label>
-    <label><input type="checkbox" value="steampunk airship"> 蒸汽朋克飞艇</label>
-    <label><input type="checkbox" value="magic library"> 魔法图书馆</label>
-    <label><input type="checkbox" value="future farm"> 未来农场</label>
-    <label><input type="checkbox" value="ancient battlefield"> 古代战场</label>
-    <label><input type="checkbox" value="mysterious swamp"> 神秘沼泽</label>
-    <label><input type="checkbox" value="high-tech laboratory"> 高科技实验室</label>
-    <label><input type="checkbox" value="dreamy island"> 梦幻岛屿</label>
-    <label><input type="checkbox" value="interior of spaceship"> 宇宙飞船内部</label>
-    <label><input type="checkbox" value="ruined city"> 废墟城市</label>
-    <label><input type="checkbox" value="flower valley"> 繁花山谷</label>
-    <label><input type="checkbox" value="quiet bamboo forest"> 幽静竹林</label>
-    <label><input type="checkbox" value="volcano crater"> 火山口</label>
-    <label><input type="checkbox" value="desert oasis"> 沙漠绿洲</label>
-    <label><input type="checkbox" value="lost civilization"> 失落的文明</label>
-    <label><input type="checkbox" value="stormy coast"> 风暴海岸</label>
-    <label><input type="checkbox" value="snow mountain top"> 雪山之巅</label>
-    <label><input type="checkbox" value="giant ruins"> 巨人遗迹</label>
-    <label><input type="checkbox" value="mysterious cave"> 神秘洞窟</label>
-    <label><input type="checkbox" value="spaceport"> 星际港口</label>
-    <label><input type="checkbox" value="underwater ruins"> 海底古城</label>
-    <label><input type="checkbox" value="floating garden"> 空中花园</label>
-    <label><input type="checkbox" value="mysterious maze"> 神秘迷宫</label>
-    <label><input type="checkbox" value="magic academy"> 魔法学院</label>
-    <label><input type="checkbox" value="time tunnel"> 时光隧道</label>
-    <label><input type="checkbox" value="barren planet"> 荒芜星球</label>
-    <div>
-        <input type="text" id="customEnvironment" placeholder="添加自定义选项">
-        <button style="margin-left: 5px;" onclick="addCustomOption('customEnvironment', this)">添加</button>
-    </div>
+        <label><input type="checkbox" value="哥特式建筑"> 哥特式建筑</label>
+            <label><input type="checkbox" value="赛博朋克城市"> 赛博朋克城市</label>
+            <label><input type="checkbox" value="魔法森林"> 魔法森林</label>
+            <label><input type="checkbox" value="未来都市"> 未来都市</label>
+            <label><input type="checkbox" value="水晶洞穴"> 水晶洞穴</label>
+            <label><input type="checkbox" value="水下世界"> 水下世界</label>
+            <label><input type="checkbox" value="末日城市"> 末日城市</label>
+            <label><input type="checkbox" value="魔法花园"> 魔法花园</label>
+            <label><input type="checkbox" value="古典庄园"> 古典庄园</label>
+            <label><input type="checkbox" value="荒野沙漠"> 荒野沙漠</label>
+            <label><input type="checkbox" value="繁华市集"> 繁华市集</label>
+            <label><input type="checkbox" value="冰雪王国"> 冰雪王国</label>
+            <label><input type="checkbox" value="熔岩地带"> 熔岩地带</label>
+            <label><input type="checkbox" value="风车草原"> 风车草原</label>
+            <label><input type="checkbox" value="海盗港湾"> 海盗港湾</label>
+            <label><input type="checkbox" value="空中浮岛"> 空中浮岛</label>
+            <label><input type="checkbox" value="废弃工厂"> 废弃工厂</label>
+            <label><input type="checkbox" value="幻想城堡"> 幻想城堡</label>
+            <label><input type="checkbox" value="神秘遗迹"> 神秘遗迹</label>
+            <label><input type="checkbox" value="星际空间站"> 星际空间站</label>
+            <label><input type="checkbox" value="热带雨林"> 热带雨林</label>
+            <label><input type="checkbox" value="高山村落"> 高山村落</label>
+            <label><input type="checkbox" value="科技实验室"> 科技实验室</label>
+            <label><input type="checkbox" value="古老神庙"> 古老神庙</label>
+            <label><input type="checkbox" value="幽灵船"> 幽灵船</label>
+            <label><input type="checkbox" value="蒸汽朋克飞艇"> 蒸汽朋克飞艇</label>
+            <label><input type="checkbox" value="魔法图书馆"> 魔法图书馆</label>
+            <label><input type="checkbox" value="未来农场"> 未来农场</label>
+            <label><input type="checkbox" value="古代战场"> 古代战场</label>
+            <label><input type="checkbox" value="神秘沼泽"> 神秘沼泽</label>
+            <label><input type="checkbox" value="高科技实验室"> 高科技实验室</label>
+            <label><input type="checkbox" value="梦幻岛屿"> 梦幻岛屿</label>
+            <label><input type="checkbox" value="宇宙飞船内部"> 宇宙飞船内部</label>
+            <label><input type="checkbox" value="废墟城市"> 废墟城市</label>
+            <label><input type="checkbox" value="繁花山谷"> 繁花山谷</label>
+            <label><input type="checkbox" value="幽静竹林"> 幽静竹林</label>
+            <label><input type="checkbox" value="火山口"> 火山口</label>
+            <label><input type="checkbox" value="沙漠绿洲"> 沙漠绿洲</label>
+            <label><input type="checkbox" value="失落的文明"> 失落的文明</label>
+            <label><input type="checkbox" value="风暴海岸"> 风暴海岸</label>
+            <label><input type="checkbox" value="雪山之巅"> 雪山之巅</label>
+            <label><input type="checkbox" value="巨人遗迹"> 巨人遗迹</label>
+            <label><input type="checkbox" value="神秘洞窟"> 神秘洞窟</label>
+            <label><input type="checkbox" value="星际港口"> 星际港口</label>
+            <label><input type="checkbox" value="海底古城"> 海底古城</label>
+            <label><input type="checkbox" value="空中花园"> 空中花园</label>
+            <label><input type="checkbox" value="神秘迷宫"> 神秘迷宫</label>
+            <label><input type="checkbox" value="魔法学院"> 魔法学院</label>
+            <label><input type="checkbox" value="时光隧道"> 时光隧道</label>
+            <label><input type="checkbox" value="荒芜星球"> 荒芜星球</label>
+    
 </div>
         
     <div class="category-group">
         <div class="collapsible" onclick="toggleCollapse(this)">🎨 艺术风格（点击展开）</div>
         <div class="content multi-column">
-            <label><input type="checkbox" value="cyberpunk style"> 赛博朋克</label>
-            <label><input type="checkbox" value="van gogh style"> 梵高风格</label>
-            <label><input type="checkbox" value="watercolor painting"> 水彩画</label>
-            <label><input type="checkbox" value="concept art"> 概念艺术</label>
-            <label><input type="checkbox" value="anime style"> 日本动画</label>
-            <label><input type="checkbox" value="steampunk"> 蒸汽朋克</label>
-            <label><input type="checkbox" value="low poly"> 低多边形</label>
-            <label><input type="checkbox" value="surrealism"> 超现实主义</label>
-            <label><input type="checkbox" value="art nouveau"> 新艺术</label>
-            <label><input type="checkbox" value="stock illustration style"> 童话故事书插图</label>
-            <label><input type="checkbox" value="character concept art"> 角色概念艺术</label>
-            <label><input type="checkbox" value="fauvism"> 野兽派</label>
-            <label><input type="checkbox" value="pixar"> 皮克斯</label>
-            <label><input type="checkbox" value="spatialism"> 空间主义</label>
-            <label><input type="checkbox" value="color ink on paper"> 彩墨纸本</label>
-            <label><input type="checkbox" value="film photography"> 电影摄影</label>
-            <label><input type="checkbox" value="tradition chinese ink painting style"> 国风</label>
-            <label><input type="checkbox" value="fantastic realism"> 幻想现实主义</label>
-            <label><input type="checkbox" value="light and space"> 光与空间</label>
-            <label><input type="checkbox" value="subsurface scattering"> 次表面散射</label>
-            <label><input type="checkbox" value="anthropomorphism"> 拟人化</label>
-            <label><input type="checkbox" value="vector"> 向量图</label>
-            <label><input type="checkbox" value="abstract illusion"> 抽象艺术</label>
-            <label><input type="checkbox" value="poster of japanese graphic design"> 日本海报</label>
-            <label><input type="checkbox" value="weapon design"> 武器设计</label>
-            <label><input type="checkbox" value="cgsociety"> CGSociety</label>
-            <label><input type="checkbox" value="light art"> 光艺</label>
-            <label><input type="checkbox" value="cinematic"> 电影般的</label>
-            <label><input type="checkbox" value="graphic"> 设计风</label>
-            <label><input type="checkbox" value="digital art"> 数码艺术</label>
-            <label><input type="checkbox" value="traditional sense"> 传统感</label>
-            <label><input type="checkbox" value="hyper-realistic pop"> 超强的时尚设计纹理</label>
-            <label><input type="checkbox" value="intersecting planes"> 相交的平面</label>
-            <label><input type="checkbox" value="fashion trend"> 时尚潮流</label>
-            <label><input type="checkbox" value="miyazaki hayao style"> 宫崎骏风格</label>
-            <label><input type="checkbox" value="line art"> 线条</label>
-            <label><input type="checkbox" value="pop art"> 波普艺术</label>
-            <label><input type="checkbox" value="abstract memphis"> 矢量插画</label>
-            <label><input type="checkbox" value="overlapping shapes"> 重叠形状</label>
-            <label><input type="checkbox" value="geometric shapes"> 几何形状</label>
-            <label><input type="checkbox" value="flat illustration"> 平面插画</label>
-            <label><input type="checkbox" value="manuscript"> 手稿</label>
-            <label><input type="checkbox" value="lino cut"> 利诺剪裁</label>
-            <label><input type="checkbox" value="retro dark vintage"> 复古 黑暗</label>
-            <label><input type="checkbox" value="sculpture"> 水墨画雕塑</label>
-            <label><input type="checkbox" value="vincent van gogh"> 梵高</label>
-            <label><input type="checkbox" value="ethnic art"> 民族艺术</label>
-            <label><input type="checkbox" value="futuristic"> 未来主义</label>
-            <label><input type="checkbox" value="abstract"> 抽象风</label>
-            <label><input type="checkbox" value="anime"> 日本动画片</label>
-            <label><input type="checkbox" value="baroque"> 巴洛克时期</label>
-            <label><input type="checkbox" value="pixel art"> 像素画</label>
-            <label><input type="checkbox" value="quilted art"> 绗缝艺术</label>
-            <label><input type="checkbox" value="vintage"> 古典风，18-19世纪</label>
-            <label><input type="checkbox" value="pulp noir"> 黑白电影时期</label>
-            <label><input type="checkbox" value="country style"> 乡村</label>
-            <label><input type="checkbox" value="gothic gloomy"> 哥特式黑暗</label>
-            <label><input type="checkbox" value="interior design"> 室内设计</label>
-            <label><input type="checkbox" value="lofi art"> 低保真艺术（洛菲艺术）</label>
-            <label><input type="checkbox" value="doodle"> 涂鸦</label>
-            <label><input type="checkbox" value="risograph"> riso印刷风</label>
-            <label><input type="checkbox" value="dreamworks pictures"> 梦工厂影业</label>
-            <label><input type="checkbox" value="ink illustration"> 水墨插图</label>
-            <label><input type="checkbox" value="stained glass window"> 彩色玻璃窗</label>
-            <label><input type="checkbox" value="cubism"> 立体派</label>
-            <label><input type="checkbox" value="voynich manuscript"> 伏尼契手稿</label>
-            <label><input type="checkbox" value="ghibli studio"> 吉卜力</label>
-            <label><input type="checkbox" value="munashichi"> 六七质</label>
-            <label><input type="checkbox" value="yamada akihiro"> 山田章博</label>
-            <label><input type="checkbox" value="hyperrealism"> 超写实主义</label>
-            <label><input type="checkbox" value="steampunk"> 蒸汽朋克</label>
-            <label><input type="checkbox" value="soejima shigenori"> 副岛成记</label>
-            <label><input type="checkbox" value="illustration"> 插画</label>
-            <label><input type="checkbox" value="constructivist"> 建构主义</label>
-            <label><input type="checkbox" value="surrealism"> 超现实主义</label>
-            <label><input type="checkbox" value="minimalist"> 极简主义</label>
-            <label><input type="checkbox" value="abstract art"> 抽象表现主义</label>
-            <label><input type="checkbox" value="bauhaus"> 包豪斯</label>
-            <label><input type="checkbox" value="brutalist"> 粗犷主义</label>
-            <label><input type="checkbox" value="symmetrical portrait"> 对称肖像</label>
-            <label><input type="checkbox" value="flat design"> 扁平设计</label>
-            <label><input type="checkbox" value="tradition chinese ink painting"> 东方山水画</label>
-            <label><input type="checkbox" value="magic realism"> 魔幻现实主义</label>
-            <label><input type="checkbox" value="watercolor"> 水彩</label>
-            <label><input type="checkbox" value="leonardo da vinci"> 达芬奇</label>
-            <label><input type="checkbox" value="japanese ukiyo-e"> 浮世绘</label>
-            <label><input type="checkbox" value="collage art"> 拼贴艺术</label>
-            <label><input type="checkbox" value="makoto shinkai"> 新海诚</label>
-            <label><input type="checkbox" value="pointillism"> 点彩派</label>
-            <label><input type="checkbox" value="manga"> 漫画</label>
-            <label><input type="checkbox" value="fashion"> 时尚</label>
-            <label><input type="checkbox" value="concept art"> 概念艺术</label>
-            <label><input type="checkbox" value="full details"> 充满细节</label>
-            <label><input type="checkbox" value="op art/optical art"> 欧普艺术/光效应艺术</label>
-            <label><input type="checkbox" value="watercolor children's illustration"> 水彩儿童插画</label>
-            <label><input type="checkbox" value="realism"> 写实主义</label>
-            <label><input type="checkbox" value="oil painting"> 油画</label>
-            <label><input type="checkbox" value="renaissance"> 文艺复兴</label>
-            <label><input type="checkbox" value="90s video game"> 90年代电视游戏</label>
-            <label><input type="checkbox" value="photography"> 摄影</label>
-            <label><input type="checkbox" value="french art"> 法国艺术</label>
-            <label><input type="checkbox" value="impressionism"> 印象派</label>
-            <label><input type="checkbox" value="claude monet"> 克劳德莫奈</label>
-            <label><input type="checkbox" value="blockprint"> 印刷版画</label>
-            <label><input type="checkbox" value="clear facial features"> 清晰的面部特征</label>
-            <label><input type="checkbox" value="architectural sketching"> 建筑素描</label>
-            <label><input type="checkbox" value="black and white"> 黑白</label>
-            <label><input type="checkbox" value="unity creations"> 统一创作</label>
-            <label><input type="checkbox" value="partial anatomy"> 局部解剖</label>
-            <label><input type="checkbox" value="japanese comics/manga"> 日本漫画4</label>
-            <label><input type="checkbox" value="sketch"> 素描</label>
-            <label><input type="checkbox" value="transavantgarde"> 超前卫</label>
-            <label><input type="checkbox" value="montage"> 剪辑</label>
-            <label><input type="checkbox" value="victorian"> 维多利亚时代</label>
-            <label><input type="checkbox" value="rococo"> 新艺术 Rococo</label>
-            <label><input type="checkbox" value="ink render"> 墨水渲染</label>
-            <label><input type="checkbox" value="dynamic pose"> 时尚潮流 dynamic pose</label>
-            <label><input type="checkbox" value="game scene graph"> 游戏场景图</label>
-            <label><input type="checkbox" value="ink painting"> 雕塑 ink painting</label>
-            <div>
-                <input type="text" id="customStyle" placeholder="添加自定义选项">
-                <button style="margin-left: 5px;" onclick="addCustomOption('customStyle', this)">添加</button>
-            </div>
+            <label><input type="checkbox" value="赛博朋克"> 赛博朋克</label>
+            <label><input type="checkbox" value="梵高风格"> 梵高风格</label>
+            <label><input type="checkbox" value="水彩画"> 水彩画</label>
+            <label><input type="checkbox" value="概念艺术"> 概念艺术</label>
+            <label><input type="checkbox" value="日本动画"> 日本动画</label>
+            <label><input type="checkbox" value="蒸汽朋克"> 蒸汽朋克</label>
+            <label><input type="checkbox" value="低多边形"> 低多边形</label>
+            <label><input type="checkbox" value="超现实主义"> 超现实主义</label>
+            <label><input type="checkbox" value="新艺术"> 新艺术</label>
+            <label><input type="checkbox" value="童话故事书插图"> 童话故事书插图</label>
+            <label><input type="checkbox" value="角色概念艺术"> 角色概念艺术</label>
+            <label><input type="checkbox" value="野兽派"> 野兽派</label>
+            <label><input type="checkbox" value="皮克斯"> 皮克斯</label>
+            <label><input type="checkbox" value="空间主义"> 空间主义</label>
+            <label><input type="checkbox" value="彩墨纸本"> 彩墨纸本</label>
+            <label><input type="checkbox" value="电影摄影"> 电影摄影</label>
+            <label><input type="checkbox" value="国风"> 国风</label>
+            <label><input type="checkbox" value="幻想现实主义"> 幻想现实主义</label>
+            <label><input type="checkbox" value="光与空间"> 光与空间</label>
+            <label><input type="checkbox" value="次表面散射"> 次表面散射</label>
+            <label><input type="checkbox" value="拟人化"> 拟人化</label>
+            <label><input type="checkbox" value="向量图"> 向量图</label>
+            <label><input type="checkbox" value="抽象艺术"> 抽象艺术</label>
+            <label><input type="checkbox" value="日本海报"> 日本海报</label>
+            <label><input type="checkbox" value="武器设计"> 武器设计</label>
+            <label><input type="checkbox" value="CGSociety"> CGSociety</label>
+            <label><input type="checkbox" value="光艺"> 光艺</label>
+            <label><input type="checkbox" value="电影般的"> 电影般的</label>
+            <label><input type="checkbox" value="设计风"> 设计风</label>
+            <label><input type="checkbox" value="数码艺术"> 数码艺术</label>
+            <label><input type="checkbox" value="传统感"> 传统感</label>
+            <label><input type="checkbox" value="超强的时尚设计纹理"> 超强的时尚设计纹理</label>
+            <label><input type="checkbox" value="相交的平面"> 相交的平面</label>
+            <label><input type="checkbox" value="时尚潮流"> 时尚潮流</label>
+            <label><input type="checkbox" value="宫崎骏风格"> 宫崎骏风格</label>
+            <label><input type="checkbox" value="线条"> 线条</label>
+            <label><input type="checkbox" value="波普艺术"> 波普艺术</label>
+            <label><input type="checkbox" value="矢量插画"> 矢量插画</label>
+            <label><input type="checkbox" value="重叠形状"> 重叠形状</label>
+            <label><input type="checkbox" value="几何形状"> 几何形状</label>
+            <label><input type="checkbox" value="平面插画"> 平面插画</label>
+            <label><input type="checkbox" value="手稿"> 手稿</label>
+            <label><input type="checkbox" value="利诺剪裁"> 利诺剪裁</label>
+            <label><input type="checkbox" value="复古 黑暗"> 复古 黑暗</label>
+            <label><input type="checkbox" value="水墨画雕塑"> 水墨画雕塑</label>
+            <label><input type="checkbox" value="梵高"> 梵高</label>
+            <label><input type="checkbox" value="民族艺术"> 民族艺术</label>
+            <label><input type="checkbox" value="未来主义"> 未来主义</label>
+            <label><input type="checkbox" value="抽象风"> 抽象风</label>
+            <label><input type="checkbox" value="日本动画片"> 日本动画片</label>
+            <label><input type="checkbox" value="巴洛克时期"> 巴洛克时期</label>
+            <label><input type="checkbox" value="像素画"> 像素画</label>
+            <label><input type="checkbox" value="绗缝艺术"> 绗缝艺术</label>
+            <label><input type="checkbox" value="古典风，18-19世纪"> 古典风，18-19世纪</label>
+            <label><input type="checkbox" value="黑白电影时期"> 黑白电影时期</label>
+            <label><input type="checkbox" value="乡村"> 乡村</label>
+            <label><input type="checkbox" value="哥特式黑暗"> 哥特式黑暗</label>
+            <label><input type="checkbox" value="室内设计"> 室内设计</label>
+            <label><input type="checkbox" value="低保真艺术（洛菲艺术）"> 低保真艺术（洛菲艺术）</label>
+            <label><input type="checkbox" value="涂鸦"> 涂鸦</label>
+            <label><input type="checkbox" value="riso印刷风"> riso印刷风</label>
+            <label><input type="checkbox" value="梦工厂影业"> 梦工厂影业</label>
+            <label><input type="checkbox" value="水墨插图"> 水墨插图</label>
+            <label><input type="checkbox" value="彩色玻璃窗"> 彩色玻璃窗</label>
+            <label><input type="checkbox" value="立体派"> 立体派</label>
+            <label><input type="checkbox" value="伏尼契手稿"> 伏尼契手稿</label>
+            <label><input type="checkbox" value="吉卜力"> 吉卜力</label>
+            <label><input type="checkbox" value="六七质"> 六七质</label>
+            <label><input type="checkbox" value="山田章博"> 山田章博</label>
+            <label><input type="checkbox" value="超写实主义"> 超写实主义</label>
+            <label><input type="checkbox" value="蒸汽朋克"> 蒸汽朋克</label>
+            <label><input type="checkbox" value="副岛成记"> 副岛成记</label>
+            <label><input type="checkbox" value="插画"> 插画</label>
+            <label><input type="checkbox" value="建构主义"> 建构主义</label>
+            <label><input type="checkbox" value="超现实主义"> 超现实主义</label>
+            <label><input type="checkbox" value="极简主义"> 极简主义</label>
+            <label><input type="checkbox" value="抽象表现主义"> 抽象表现主义</label>
+            <label><input type="checkbox" value="包豪斯"> 包豪斯</label>
+            <label><input type="checkbox" value="粗犷主义"> 粗犷主义</label>
+            <label><input type="checkbox" value="对称肖像"> 对称肖像</label>
+            <label><input type="checkbox" value="扁平设计"> 扁平设计</label>
+            <label><input type="checkbox" value="东方山水画"> 东方山水画</label>
+            <label><input type="checkbox" value="魔幻现实主义"> 魔幻现实主义</label>
+            <label><input type="checkbox" value="水彩"> 水彩</label>
+            <label><input type="checkbox" value="达芬奇"> 达芬奇</label>
+            <label><input type="checkbox" value="浮世绘"> 浮世绘</label>
+            <label><input type="checkbox" value="拼贴艺术"> 拼贴艺术</label>
+            <label><input type="checkbox" value="新海诚"> 新海诚</label>
+            <label><input type="checkbox" value="点彩派"> 点彩派</label>
+            <label><input type="checkbox" value="漫画"> 漫画</label>
+            <label><input type="checkbox" value="时尚"> 时尚</label>
+            <label><input type="checkbox" value="概念艺术"> 概念艺术</label>
+            <label><input type="checkbox" value="充满细节"> 充满细节</label>
+            <label><input type="checkbox" value="欧普艺术/光效应艺术"> 欧普艺术/光效应艺术</label>
+            <label><input type="checkbox" value="水彩儿童插画"> 水彩儿童插画</label>
+            <label><input type="checkbox" value="写实主义"> 写实主义</label>
+            <label><input type="checkbox" value="油画"> 油画</label>
+            <label><input type="checkbox" value="文艺复兴"> 文艺复兴</label>
+            <label><input type="checkbox" value="90年代电视游戏"> 90年代电视游戏</label>
+            <label><input type="checkbox" value="摄影"> 摄影</label>
+            <label><input type="checkbox" value="法国艺术"> 法国艺术</label>
+            <label><input type="checkbox" value="印象派"> 印象派</label>
+            <label><input type="checkbox" value="克劳德莫奈"> 克劳德莫奈</label>
+            <label><input type="checkbox" value="印刷版画"> 印刷版画</label>
+            <label><input type="checkbox" value="清晰的面部特征"> 清晰的面部特征</label>
+            <label><input type="checkbox" value="建筑素描"> 建筑素描</label>
+            <label><input type="checkbox" value="黑白"> 黑白</label>
+            <label><input type="checkbox" value="统一创作"> 统一创作</label>
+            <label><input type="checkbox" value="局部解剖"> 局部解剖</label>
+            <label><input type="checkbox" value="日本漫画4"> 日本漫画4</label>
+            <label><input type="checkbox" value="素描"> 素描</label>
+            <label><input type="checkbox" value="超前卫"> 超前卫</label>
+            <label><input type="checkbox" value="剪辑"> 剪辑</label>
+            <label><input type="checkbox" value="维多利亚时代"> 维多利亚时代</label>
+            <label><input type="checkbox" value="新艺术 Rococo"> 新艺术 Rococo</label>
+            <label><input type="checkbox" value="墨水渲染"> 墨水渲染</label>
+            <label><input type="checkbox" value="动态姿势"> 动态姿势</label>
+            <label><input type="checkbox" value="游戏场景图"> 游戏场景图</label>
+            <label><input type="checkbox" value="雕塑 ink painting"> 雕塑 ink painting</label>
+            
         </div>
     </div>
     <div class="category-group">
         <div class="collapsible" onclick="toggleCollapse(this)">🌈 色彩与材质（点击展开）</div>
         <div class="content multi-column">
-            <label><input type="checkbox" value="vibrant colors"> 鲜艳色彩</label>
-            <label><input type="checkbox" value="golden hour light"> 黄金时段光</label>
-            <label><input type="checkbox" value="neon lighting"> 霓虹灯光</label>
-            <label><input type="checkbox" value="matte texture"> 哑光质感</label>
-            <label><input type="checkbox" value="metal texture"> 金属质感</label>
-            <label><input type="checkbox" value="glowing particles"> 发光粒子</label>
-            <label><input type="checkbox" value="transparent material"> 透明材质</label>
-            <label><input type="checkbox" value="holographic effect"> 全息效果</label>
-            <label><input type="checkbox" value="carved texture"> 雕刻质感</label>
-            <label><input type="checkbox" value="herringbone pattern"> 鱼骨图案</label>
-            <label><input type="checkbox" value="clay texture"> 黏土质地</label>
-            <label><input type="checkbox" value="glass"> 玻璃</label>
-            <label><input type="checkbox" value="epoxy"> 环氧树脂</label>
-            <label><input type="checkbox" value="fluid"> 流体</label>
-            <label><input type="checkbox" value="furry"> 毛茸茸的</label>
-            <label><input type="checkbox" value="serpentine stripes pattern"> 蛇纹图案</label>
-            <label><input type="checkbox" value="skeletal"> 骨骼状</label>
-            <label><input type="checkbox" value="cloisonné"> 掐丝珐琅</label>
-            <label><input type="checkbox" value="fluffy"> 蓬松的</label>
-            <label><input type="checkbox" value="anodized titanium"> 阳极氧化钛</label>
-            <label><input type="checkbox" value="paisley"> 波斯花纹</label>
-            <label><input type="checkbox" value="lace"> 蕾丝</label>
-            <label><input type="checkbox" value="light particles"> 光粒子</label>
-            <label><input type="checkbox" value="magma"> 岩浆</label>
-            <label><input type="checkbox" value="moldy"> 发霉的</label>
-            <label><input type="checkbox" value="molten"> 熔化的</label>
-            <label><input type="checkbox" value="3d fractals"> 3D分形</label>
-            <div>
-                <input type="text" id="customColor" placeholder="添加自定义选项">
-                <button style="margin-left: 5px;" onclick="addCustomOption('customColor', this)">添加</button>
-            </div>
+            <label><input type="checkbox" value="鲜艳色彩"> 鲜艳色彩</label>
+                <label><input type="checkbox" value="黄金时段光"> 黄金时段光</label>
+                <label><input type="checkbox" value="霓虹灯光"> 霓虹灯光</label>
+                <label><input type="checkbox" value="哑光质感"> 哑光质感</label>
+                <label><input type="checkbox" value="金属质感"> 金属质感</label>
+                <label><input type="checkbox" value="发光粒子"> 发光粒子</label>
+                <label><input type="checkbox" value="透明材质"> 透明材质</label>
+                <label><input type="checkbox" value="全息效果"> 全息效果</label>
+                <label><input type="checkbox" value="雕刻质感"> 雕刻质感</label>
+                <label><input type="checkbox" value="鱼骨图案"> 鱼骨图案</label>
+                <label><input type="checkbox" value="黏土质地"> 黏土质地</label>
+                <label><input type="checkbox" value="玻璃"> 玻璃</label>
+                <label><input type="checkbox" value="环氧树脂"> 环氧树脂</label>
+                <label><input type="checkbox" value="流体"> 流体</label>
+                <label><input type="checkbox" value="毛茸茸的"> 毛茸茸的</label>
+                <label><input type="checkbox" value="蛇纹图案"> 蛇纹图案</label>
+                <label><input type="checkbox" value="骨骼状"> 骨骼状</label>
+                <label><input type="checkbox" value="掐丝珐琅"> 掐丝珐琅</label>
+                <label><input type="checkbox" value="蓬松的"> 蓬松的</label>
+                <label><input type="checkbox" value="阳极氧化钛"> 阳极氧化钛</label>
+                <label><input type="checkbox" value="波斯花纹"> 波斯花纹</label>
+                <label><input type="checkbox" value="蕾丝"> 蕾丝</label>
+                <label><input type="checkbox" value="光粒子"> 光粒子</label>
+                <label><input type="checkbox" value="岩浆"> 岩浆</label>
+                <label><input type="checkbox" value="发霉的"> 发霉的</label>
+                <label><input type="checkbox" value="熔化的"> 熔化的</label>
+                <label><input type="checkbox" value="3D分形"> 3D分形</label>
+            
         </div>
     </div>
 
@@ -416,10 +401,7 @@
             <label><input type="checkbox" value="热蜡画"> 热蜡画</label>
             <label><input type="checkbox" value="铁艺"> 铁艺</label>
             <label><input type="checkbox" value="漫画与插画"> 漫画与插画</label>
-            <div>
-                <input type="text" id="customMedium" placeholder="添加自定义选项">
-                <button style="margin-left: 5px;" onclick="addCustomOption('customMedium', this)">添加</button>
-            </div>
+            
         </div>
     </div>
 
@@ -451,10 +433,7 @@
             <label><input type="checkbox" value="哥特式风格"> 哥特式风格</label>
             <label><input type="checkbox" value="文艺复兴晚期及样式主义"> 文艺复兴晚期及样式主义</label>
             <label><input type="checkbox" value="工业革命时期风格"> 工业革命时期风格</label>
-            <div>
-                <input type="text" id="customTime" placeholder="添加自定义选项">
-                <button style="margin-left: 5px;" onclick="addCustomOption('customTime', this)">添加</button>
-            </div>
+            
         </div>
     </div>
 
@@ -486,10 +465,7 @@
         <label><input type="checkbox" value="浪漫的"> 浪漫的</label>
         <label><input type="checkbox" value="紧张的"> 紧张的</label>
         <label><input type="checkbox" value="放松的"> 放松的</label>
-        <div>
-            <input type="text" id="customEmote" placeholder="添加自定义选项">
-            <button style="margin-left: 5px;" onclick="addCustomOption('customEmote', this)">添加</button>
-        </div>
+        
     </div>
 </div>
 
@@ -540,10 +516,7 @@
             <label><input type="checkbox" value="日式风"> 日式风</label>
             <label><input type="checkbox" value="北欧风"> 北欧风</label>
             <label><input type="checkbox" value="地中海风"> 地中海风</label>
-            <div>
-                <input type="text" id="customColorScheme" placeholder="添加自定义选项">
-                <button style="margin-left: 5px;" onclick="addCustomOption('customColorScheme', this)">添加</button>
-            </div>
+            
         </div>
     </div>
 
@@ -556,11 +529,7 @@
     <script>
         function toggleCollapse(element) {
             const content = element.nextElementSibling;
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-            } else {
-                content.style.display = 'block';
-            }
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
 
         function generateSmartPrompt() {
